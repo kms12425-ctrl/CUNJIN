@@ -1,0 +1,10 @@
+{
+  "app": {
+    "bundleName": "com.junhao.cunjin",
+    "vendor": "JunHao",
+    "versionCode": 1000009,
+    "versionName": "0.2.3",
+    "icon": "$media:app_icon",
+    "label": "$string:app_name"
+  }
+}
