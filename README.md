@@ -54,6 +54,27 @@ entry/src/main/ets/
 
 用 DevEco Studio 打开本目录，或在已配置 hvigor 的环境下执行构建；`compatibleSdkVersion` 为 `5.0.0(12)`。
 
+### 打 HAP 安装包
+
+图形界面：`Build > Build Hap(s)/APP(s) > Build Hap(s)`。
+
+命令行（不需要打开 IDE，复用 DevEco Studio 自带的 hvigor / SDK / Node）：
+
+```powershell
+.\build-hap.ps1                    # debug 版
+.\build-hap.ps1 -BuildMode release # release 版（按 obfuscation-rules.txt 混淆）
+.\build-hap.ps1 -Clean             # 先清干净再构建
+.\build-hap.ps1 -App               # 打 .app 整包（上架用）
+.\build-hap.ps1 -Install           # 构建完直接 hdc install 到设备
+```
+
+产物在 `entry/build/default/outputs/default/`：`entry-default-signed.hap`（已签名，可安装）或
+`entry-default-unsigned.hap`（未签名，仅能检查/上传前处理）。debug 与 release 会写同一个文件名，后一次构建覆盖前一次。
+
+未签名包无法安装；在 DevEco Studio 里登录华为账号并勾选
+`File > Project Structure > Project > Signing Configs > Automatically generate signature`
+后，构建即自动签名。
+
 ## 许可
 
 见 [LICENSE](LICENSE)。
