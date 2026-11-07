@@ -23,7 +23,6 @@ The name comes from 日有寸进: no promises of a breakthrough, only of accumul
 
 ## Screenshots
 
-> These were taken before the rename, so the header still shows the old title. Re-run a preview to refresh them.
 
 ![Phone](Examples/Screenshot_Phone.png)
 ![Foldable](Examples/Rocky%E2%80%99s%20Green%20Dashboard%20Interface_foldable.png)
