@@ -23,7 +23,6 @@
 
 ## 截图
 
-> 截图为改名前的界面，标题仍是旧名，重跑一次预览即可更新。
 
 ![Phone](Examples/Screenshot_Phone.png)
 ![Foldable](Examples/Rocky%E2%80%99s%20Green%20Dashboard%20Interface_foldable.png)
